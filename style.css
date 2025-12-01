@@ -1,0 +1,150 @@
+/* Navigation styles */
+nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0px 20px 0;
+    z-index: 1000;
+    background-color: rgba(50, 50, 60, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0,.52);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+#logo {
+    Position: fixed;
+    left: 0;
+}
+
+nav a {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #e6e6e6;
+    text-decoration: none;
+    transition: color 0.3s border-bottom 0.3s;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    position: relative;
+}
+
+nav a:hover {
+    color: #1b1b20;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+/* Home page styles */
+.main {
+    margin: 60px 0 0 0;
+   display: flex;
+   flex-direction: column;
+   margin-left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/tony2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    background-position: ; /*I entered "center center" as in the lecture as the value of this property and it pushed the backgroud image up. I could not bring it back to the position I want with margin or padding How do I change this? */
+}  
+
+.main::before {
+    content: '';
+    position: absolute; /*absolute; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+
+}
+
+
+.main-container {
+    color: #e6e6e6;
+    position:relative;
+    z-index: 1;
+}
+
+#button a {
+    text-decoration: none;
+}
+
+#paragraph {
+    text-align: bottom;
+    color:#e6e6e6;
+}
+
+button {
+    text-transform: uppercase;
+    position: relative;
+    border: none;
+    font-size: 18px;
+    transform: 0.2s;
+    background-color: 0.2s;
+    outline: none;
+    border-radius: 3px;
+    margin: 10px 220px; /* 40px 10px 0 10px; */
+    padding: 15px 20px; /*23px 33px; */
+    border: 3px solid transparent;
+    justify-items: ;
+    
+}
+
+button a {
+    text-decoration: none;
+}
+
+/* About page styles */
+.main-content {
+    margin-top: 60px;
+    padding: 200px 20px 10px 40px; 
+    position: relative;
+    font-family: Roboto, sans-serif;
+    color: #e6e6e6;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 1;
+}
+
+.heading-content {
+   color: #e6e6e6; 
+    text-transform: uppercase;
+   padding: 4rem;
+}
+
+ h1 {
+    color: #e6e6e6;
+}
+
+.heading-detail {
+    font-size: 16px;
+    color: #e6e6e6;
+}
+/*
+.main-content::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 0;
+} 
+*/
